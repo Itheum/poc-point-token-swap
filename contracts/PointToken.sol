@@ -14,4 +14,12 @@ contract PointToken {
   function getCount() public view returns (uint256) {
     return count;
   }
+
+  function getMyBalance() public view returns (uint256) {
+    return address(this).balance;
+  }
+
+  function depositToContract(uint256 amount) public payable {
+    // nothing to do!
+  }
 }

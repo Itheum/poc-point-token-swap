@@ -7,10 +7,25 @@
   </head>
   <body>
     <div class="container">
-      <p>Current count: <span id="count">??</span></p>
-      <button id="getcount">Get current count</button>
-      <button id="increment">Increment count</button>
-      <button id="clearlog">Clear log</button>
+      <div>
+        <p>Current count: <span id="count">??</span></p>
+        <button id="getcount">Get current count</button>
+        <button id="increment">Increment count</button>
+        <button id="clearlog">Clear log</button>
+        <button id="runCustomCmd">Run Custom Command</button>
+      </div>
+      <div>
+        <div>Enter an address and view its balance</div>
+        <input id="addressBalance" width="800">
+        <button id="getAddressBalance">Get balance</button>
+        <p>Current balance: <span id="showBalance">??</span></p>
+      </div>
+      <div>
+        <div>Transfer between addresses</div>
+        <span>From: </span><input id="fromAddress" width="800" />
+        <span>To: </span><input id="toAddress" width="800" />
+        <button id="transferBetweenAddresses">Transfer</button>
+      </div>
       <div id="log"></div>
     </div>
 
