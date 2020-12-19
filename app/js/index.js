@@ -133,7 +133,7 @@ $(() => {
 
     log(`web3.version.network ID ${web3.version.network}`);
     
-    if (web3.version.network != 1540265281538) {
+    if (web3.version.network != 1540451565835) {
       error("Wrong network detected. Please switch to the adviced test network.");
     } 
     else {
